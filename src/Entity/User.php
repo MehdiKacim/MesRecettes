@@ -31,6 +31,10 @@ class User
     #[ORM\Column(type: 'date')]
     private $UpdatedAt;
 
+    #[ORM\ManyToOne(targetEntity: Theme::class, inversedBy: 'users')]
+    #[ORM\JoinColumn(nullable: false)]
+    private $Theme;
+
     public function getId(): ?int
     {
         return $this->id;
@@ -104,6 +108,18 @@ class User
     public function setUpdatedAt(\DateTimeImmutable $UpdatedAt): self
     {
         $this->UpdatedAt = $UpdatedAt;
+
+        return $this;
+    }
+
+    public function getTheme(): ?Theme
+    {
+        return $this->Theme;
+    }
+
+    public function setTheme(?Theme $Theme): self
+    {
+        $this->Theme = $Theme;
 
         return $this;
     }

@@ -39,25 +39,8 @@ class UserRepository extends ServiceEntityRepository
         }
     }
 
-
-   public function RemoveAll()
-   {
-    //    $Query =  $this->getEntityManager()->$VarName = $repo->findAll();;
-    //    dump($Query->getResult());
-    //    die;
-    //    foreach($Query->getResult() as $u)
-    //    {
-    //        $this->remove($u);
-    //    }
-   }
-
-//    public function findOneBySomeField($value): ?User
-//    {
-//        return $this->createQueryBuilder('u')
-//            ->andWhere('u.exampleField = :val')
-//            ->setParameter('val', $value)
-//            ->getQuery()
-//            ->getOneOrNullResult()
-//        ;
-//    }
+    public function update(User $user, bool $flush = false){
+        $em = $this->getEntityManager();
+        $em->getby
+    }
 }
