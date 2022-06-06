@@ -41,6 +41,5 @@ class UserRepository extends ServiceEntityRepository
 
     public function update(User $user, bool $flush = false){
         $em = $this->getEntityManager();
-        $em->getby
     }
 }

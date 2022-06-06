@@ -4627,3 +4627,8 @@
   "integrity" "sha512-9BK1jFpLzJROCI5TzwZL/TU4gqjK5xiHV/RfWLOahrjAko/e4DJkRDZQXfvqAsiZzzYhgAzbgz6lg48jcm4GLg=="
   "resolved" "https://registry.npmjs.org/yargs-parser/-/yargs-parser-21.0.1.tgz"
   "version" "21.0.1"
+
+"yarn@^1.22.18":
+  "integrity" "sha512-oFffv6Jp2+BTUBItzx1Z0dpikTX+raRdqupfqzeMKnoh7WD6RuPAxcqDkMUy9vafJkrB0YaV708znpuMhEBKGQ=="
+  "resolved" "https://registry.npmjs.org/yarn/-/yarn-1.22.18.tgz"
+  "version" "1.22.18"

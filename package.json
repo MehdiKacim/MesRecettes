@@ -20,6 +20,7 @@
         "build": "encore production --progress"
     },
     "dependencies": {
-        "daisyui": "^2.15.2"
+        "daisyui": "^2.15.2",
+        "yarn": "^1.22.18"
     }
 }

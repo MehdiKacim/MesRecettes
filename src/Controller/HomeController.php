@@ -14,7 +14,7 @@ class HomeController extends AbstractController
     {
         return $this->render('home/index.html.twig', [
             'controller_name' => 'HomeController',
-            'user_theme_key' => 'cupcake'
+            'user_theme_key' => 'business'
         ]);
     }
 }

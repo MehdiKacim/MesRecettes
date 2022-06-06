@@ -6,6 +6,7 @@ use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
 use App\Entity\User;
+use App\Entity\Theme;
 use Doctrine\Persistence\ManagerRegistry;
 use App\Repository;
 class UserController extends AbstractController
@@ -15,20 +16,12 @@ class UserController extends AbstractController
     {
         $em = $doctrine->getManager();
 
-        $user = new User();
-
-        $user->setUsername("Mehdikacim");
-        $user->setPassword("Mehkac1995!");
-        $user->setDateOfBirth(new \DateTimeImmutable("1995-07-06"));
-        $user->setMail("mehdikacim@guelt.com");
-        $user->setCreatedAt(new \DateTimeImmutable());
-        $user->setUpdatedAt($user->getCreatedAt());
-
-        $repository = $doctrine->getRepository(User::class);
-        $repository->removeAll();
+        $r = $doctrine->getRepository(User::class);
+        $u = $r->find(1);
+        dump($u);
         return $this->render('user/index.html.twig', [
             'controller_name' => 'UserController',
-            'User' => $user
+            'current_user' => $u
         ]);
     }
 }

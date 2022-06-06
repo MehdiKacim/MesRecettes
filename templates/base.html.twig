@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html data-theme="{{ user_theme_key }}">
+
+<html data-theme="{% if current_user is not defined %}light{% else %}{{current_user.Theme.Label}}{% endif %}">
     <head>
         <meta charset="UTF-8">
         <title>{% block title %}CV Mehdi{% endblock %}</title>
