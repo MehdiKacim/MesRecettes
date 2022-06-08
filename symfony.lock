@@ -83,6 +83,9 @@
     "laminas/laminas-code": {
         "version": "4.5.1"
     },
+    "marcw/twig-heroicons": {
+        "version": "1.0.1"
+    },
     "masterminds/html5": {
         "version": "2.7.5"
     },
